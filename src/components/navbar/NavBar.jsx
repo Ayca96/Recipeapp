@@ -61,7 +61,7 @@ export default function NavBar() {
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
          <Box sx={{
-          backgroundColor:"#FFC92F",
+          backgroundColor:"#BC343C",
           display: 'flex',
           justifyContent: 'center', 
           alignItems: 'center', 
@@ -70,9 +70,9 @@ export default function NavBar() {
           padding: 0,
           
           }}>
-          <img src={ Logo } width="200px"
-          />
-           <Button sx={{borderRadius:"50px","&:hover":{backgroundColor:"#F2A649"}}} onClick={toggleDrawer(anchor, true)}><MenuIcon sx={{color:"black", }} /></Button>
+          {/* <img src={ Logo } width="100px"
+          /> */}
+           <Button sx={{borderRadius:"50px","&:hover":{backgroundColor:"red"}}} onClick={toggleDrawer(anchor, true)}><MenuIcon sx={{color:"black", }} /></Button>
          </Box>
          
           <SwipeableDrawer
