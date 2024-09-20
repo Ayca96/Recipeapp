@@ -5,6 +5,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
 import  "../css/Register.css"
+import GoogleIcon from '@mui/icons-material/Google';
 
 export default function Register() {
   return (
@@ -21,11 +22,11 @@ export default function Register() {
       <TextField className='textField' id="outlined-basic" label="Password" variant="outlined" />
 
       <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
-      <Button variant="outlined" startIcon={<DeleteIcon />}>
-        Delete
+      <Button variant="outlined" startIcon={<GoogleIcon />}>
+      Continue with Google
       </Button>
       <Button variant="contained" endIcon={<SendIcon />}>
-        Send
+       Register
       </Button>
     </Stack>
     
