@@ -1,8 +1,37 @@
 .homeContainer{
-  background-image: url(../assets/mariana-medvedeva-usfIE5Yc7PY-unsplash.jpg);
+  background-image: url(../assets/brooke-lark-GTMGG-xvxdU-unsplash.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
- width: 100%;
- height: 100vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+
+.start{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  font-size: 40px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  
+}
+
+.homeButon{
+  margin-top: 20px;
+ background-color: green;
+ width: 80px;
+ height: 40px;
+ border-radius: 25px;
+ border: none;
+}
+
+.homeButon:hover{
+  cursor: pointer;
+  background-color: yellowgreen;
 }
