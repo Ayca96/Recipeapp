@@ -1,0 +1,8 @@
+.homeContainer{
+  background-image: url(../assets/mariana-medvedeva-usfIE5Yc7PY-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ width: 100%;
+ height: 100vh;
+}

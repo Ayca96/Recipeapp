@@ -1,11 +1,13 @@
 
-
+import "../css/Home.css"
 
 function Home() {
   return (
   <>
   
-    <div>Home</div>
+    <div className="homeContainer">
+      <p>Merhaba</p>
+    </div>
   </>
 
     

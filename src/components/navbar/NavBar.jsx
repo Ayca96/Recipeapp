@@ -62,7 +62,7 @@ export default function NavBar() {
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
          <Box sx={{
-          backgroundColor:"#BC343C",
+          backgroundColor:"#A2C15A",
           display: 'flex',
           justifyContent: 'center', 
           alignItems: 'center', 

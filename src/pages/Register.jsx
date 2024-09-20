@@ -8,17 +8,17 @@ import  "../css/Register.css"
 
 export default function Register() {
   return (
-    <div className='form'>
-    <Box 
+    <div className='container'>
+    <Box className='form'
       component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '25ch', display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center",gap:2,maxWidth:500, margin:"auto" } }}
+      sx={{ '& > :not(style)': { m: 1,  } }}
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="First Name" variant="outlined" />
-      <TextField id="outlined-basic" label="Last Name" variant="outlined" />
-      <TextField id="outlined-basic" label="E-Mail" variant="outlined" />
-      <TextField id="outlined-basic" label="Password" variant="outlined" />
+      <TextField className='textField' id="outlined-basic" label="First Name" variant="outlined" />
+      <TextField className='textField' id="outlined-basic" label="Last Name" variant="outlined" />
+      <TextField className='textField' id="outlined-basic" label="E-Mail" variant="outlined" />
+      <TextField className='textField' id="outlined-basic" label="Password" variant="outlined" />
 
       <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
       <Button variant="outlined" startIcon={<DeleteIcon />}>
