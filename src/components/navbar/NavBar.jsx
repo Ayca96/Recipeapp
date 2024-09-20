@@ -8,7 +8,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { useNavigate } from 'react-router-dom';
-import Logo from "../../assets/Design ohne Titel.png"
+// import Logo from "../../assets/Design ohne Titel.png"
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MenuIcon from '@mui/icons-material/Menu';
 
 
@@ -70,8 +71,10 @@ export default function NavBar() {
           padding: 0,
           
           }}>
-          {/* <img src={ Logo } width="100px"
-          /> */}
+          <Box sx={{marginRight:4, color:"white", fontSize:25}}> Aycas Recipe
+          
+          </Box>
+          {<MenuBookIcon/>}
            <Button sx={{borderRadius:"50px","&:hover":{backgroundColor:"red"}}} onClick={toggleDrawer(anchor, true)}><MenuIcon sx={{color:"black", }} /></Button>
          </Box>
          
