@@ -1,13 +1,14 @@
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
 import  "../css/Register.css"
 import GoogleIcon from '@mui/icons-material/Google';
 
+
 export default function Register() {
+  
   return (
     <div className='container'>
     <Box className='form'
@@ -25,7 +26,10 @@ export default function Register() {
       <Button variant="outlined" startIcon={<GoogleIcon />}>
       Continue with Google
       </Button>
-      <Button variant="contained" endIcon={<SendIcon />}>
+      <Button 
+    
+  
+      variant="contained" endIcon={<SendIcon />}>
        Register
       </Button>
     </Stack>
