@@ -1,12 +1,27 @@
 import { Box, Button, Stack, TextField } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
-import GoogleIcon from '@mui/icons-material/Google';
+// import GoogleIcon from '@mui/icons-material/Google';
 import "../css/Login.css"
+import { useContext } from "react";
+import { RecipeContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 
 function Login() {
+  const{email,setEmail,password,setPassword}=useContext(RecipeContext)
+  const navigate = useNavigate()
+
+ const handleSubmit = (e)=>{
+  e.preventDefault()
+
+localStorage.setItem("email",email)
+localStorage.setItem("password",password)
+
+navigate("/Home")
+ }
+
   return (
-    <div className='loginContainer'>
+    <form onSubmit={handleSubmit} className='loginContainer'>
     <Box className='loginForm'
       component="form"
       sx={{ '& > :not(style)': { m: 1,  } }}
@@ -14,21 +29,21 @@ function Login() {
       autoComplete="off"
     >
       
-      <TextField className='textField' id="outlined-basic" label="E-Mail" variant="outlined" />
-      <TextField className='textField' id="outlined-basic" label="Password" variant="outlined" />
+      <TextField className='textField' id="outlined-basic" label="E-Mail" variant="outlined"  onChange={(e) => setEmail(e.target.value)}/>
+      <TextField className='textField' id="outlined-basic" label="Password" variant="outlined"  onChange={(e) => setPassword(e.target.value) }/>
 
       <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
-      <Button variant="outlined" startIcon={<GoogleIcon />}>
+      {/* <Button variant="outlined" startIcon={<GoogleIcon />}>
       Continue with Google
-      </Button>
-      <Button variant="contained" endIcon={<SendIcon />}>
+      </Button> */}
+      <Button type="submit" variant="contained" endIcon={<SendIcon />}>
       Login
       </Button>
     </Stack>
     
     </Box>
     
-    </div>
+    </form>
   )
 }
 
