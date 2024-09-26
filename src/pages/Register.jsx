@@ -27,8 +27,8 @@ export default function Register() {
   return (
 
     //*onSubmit gelcek handleClick
-    <form onSubmit={handleSubmit} className='container'>  
-    <Box className='form'
+    <div className='container'>  
+    <Box onSubmit={handleSubmit} className='form'
       component="form"
       sx={{ '& > :not(style)': { m: 1,  } }}
       noValidate
@@ -55,7 +55,7 @@ export default function Register() {
     
     </Box>
     
-    </form>
+    </div>
       
   );
 }

@@ -17,12 +17,12 @@ function Login() {
 localStorage.setItem("email",email)
 localStorage.setItem("password",password)
 
-navigate("/Home")
+navigate("/Recipe")
  }
 
   return (
-    <form onSubmit={handleSubmit} className='loginContainer'>
-    <Box className='loginForm'
+    <div className='loginContainer'>
+    <Box onSubmit={handleSubmit}  className='loginForm'
       component="form"
       sx={{ '& > :not(style)': { m: 1,  } }}
       noValidate
@@ -43,7 +43,7 @@ navigate("/Home")
     
     </Box>
     
-    </form>
+    </div>
   )
 }
 
