@@ -5,9 +5,11 @@ import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
 import  "../css/Register.css"
 import GoogleIcon from '@mui/icons-material/Google';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Register() {
+  const navigate=useNavigate()
   
   return (
     <div className='container'>
@@ -26,10 +28,12 @@ export default function Register() {
       <Button variant="outlined" startIcon={<GoogleIcon />}>
       Continue with Google
       </Button>
+
       <Button 
-    
-  
-      variant="contained" endIcon={<SendIcon />}>
+      variant="contained" 
+      endIcon={<SendIcon />}
+      onClick={()=>{navigate("/Recipe")}}
+      >
        Register
       </Button>
     </Stack>

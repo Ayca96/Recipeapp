@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import Kontakt from "../pages/Kontakt";
 import NavBar from "../components/navbar/NavBar";
 import Login from "../pages/Login";
+import Recipe from "../pages/Recipe";
 
 const AppRouter = () => {
   return (
@@ -18,7 +19,7 @@ const AppRouter = () => {
           <Route path="/Register"  element={<Register/>}/>
           <Route path="/Login"  element={<Login/>}/>
 
-          <Route path="/Kontakt"  element={<Kontakt/>}/>
+          <Route path="/Recipe"  element={<Recipe/>}/>
         </Routes>
       </BrowserRouter>
     </>

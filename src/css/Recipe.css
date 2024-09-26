@@ -1,0 +1,72 @@
+.recipeContainer{
+  background-image: url(../assets/brooke-lark-lcZ9NxhOSlo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+}
+
+.recipepar{
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+}
+
+.recipeFormContainer{
+ 
+  padding: 2rem;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+.formInput{
+  height: 2.5rem;
+  width: 13rem;
+  border: none;
+  border-radius: 3px;
+  text-indent: 10px;
+  /* yazı 10px içten başlasın */
+  margin: 5px;
+  font-size: 1rem;
+ /* background-color: #FAE1B9; */
+  
+}
+
+
+.formButton{
+  height: 2.5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 3px;
+  text-indent: 10px;
+  /* yazı 10px içten başlasın */
+  margin: 5px;
+  font-size: 1rem;
+  background-color:#FBDF5C;
+}
+
+.formButton:hover{
+  cursor: pointer;
+  transition: all 1;
+}
+
+
+.formSelect{
+  height: 2.5rem;
+  width: 10rem;
+  border: none;
+  border-radius: 3px;
+  text-indent: 10px;
+  /* yazı 10px içten başlasın */
+  margin: 5px;
+  font-size: 1rem;
+  background-color: #FBDF5C;
+}

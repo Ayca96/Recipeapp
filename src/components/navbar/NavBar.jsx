@@ -41,7 +41,7 @@ export default function NavBar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Register', 'Login', 'About','Kontakt', ].map((text, index) => (
+        {['Home', 'Register', 'Login', 'About','Recipe', ].map((text, index) => (
           <ListItem key={index} disablePadding>
             <ListItemButton onClick={()=> {Navigate(`/${text}`)}}>
               {/* <ListItemIcon>

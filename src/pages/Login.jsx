@@ -22,7 +22,7 @@ function Login() {
       Continue with Google
       </Button>
       <Button variant="contained" endIcon={<SendIcon />}>
-       Register
+      Login
       </Button>
     </Stack>
     
