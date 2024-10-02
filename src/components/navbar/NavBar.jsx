@@ -13,6 +13,36 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MenuIcon from '@mui/icons-material/Menu';
 
 
+const links = [
+  {
+    title: "Home",
+    url: "/",
+    // icon:"/assets/navbar/ic_analytics.svg",
+    // icon: icon("ic_analytics"),
+  },
+  {
+    title: "Register",
+    url: "/register",
+    // icon: icon("firms"),
+  },
+  {
+    title: "Login",
+    url: "/login",
+    // icon: icon("brand"),
+  },
+  {
+    title: "About",
+    url: "/about",
+    // icon: icon("purchase"),
+  },
+  {
+    title: "Recipe",
+    url: "/recipe",
+    // icon: icon("sales"),
+  },
+
+];
+
 export default function NavBar() {
   const [state, setState] = React.useState({
     
@@ -41,13 +71,13 @@ export default function NavBar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Register', 'Login', 'About','Recipe', ].map((text, index) => (
+        {links.map((text, index) => (
           <ListItem key={index} disablePadding>
-            <ListItemButton onClick={()=> {Navigate(`/${text}`)}}>
+            <ListItemButton  onClick={() => Navigate(text.url)}>
               {/* <ListItemIcon>
                 { <InboxIcon />}
               </ListItemIcon> */}
-              <ListItemText primary={text} />
+              <ListItemText primary={text.title} />
             </ListItemButton>
           </ListItem>
         ))}
