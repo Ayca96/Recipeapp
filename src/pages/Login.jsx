@@ -17,7 +17,7 @@ function Login() {
 localStorage.setItem("email",email)
 localStorage.setItem("password",password)
 
-navigate("/Recipe")
+navigate("/home")
  }
 
   return (

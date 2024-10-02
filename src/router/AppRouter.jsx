@@ -6,8 +6,11 @@ import Register from "../pages/Register";
 // import Kontakt from "../pages/Kontakt";
 import NavBar from "../components/navbar/NavBar";
 import Login from "../pages/Login";
-import Recipe from "../pages/Recipe";
+// import Recipe from "../pages/Recipe";
 import PrivateRouter from "../router/PrivateRouter"
+import Details from "../pages/details/Details";
+import Recipes from "../pages/Recipes";
+
 
 const AppRouter = () => {
   return (
@@ -15,16 +18,18 @@ const AppRouter = () => {
       <BrowserRouter>  
       <NavBar/>
         <Routes>
-        <Route path="/" element={<PrivateRouter/>}>
-          <Route path="" element={<Home/>} />
+        <Route path="/home" element={<PrivateRouter/>}>
+          <Route path="" element={<Recipes/>} />
         </Route>
 
 
           <Route path="/about"  element={<About/>}/>
           <Route path="/register"  element={<Register/>}/>
-          <Route path="/login"  element={<Login/>}/>
+          <Route path="/"  element={<Home/>}/>
 
-          <Route path="/recipe"  element={<Recipe/>}/>
+          <Route path="/recipe" element={<Recipes />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/details" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </>

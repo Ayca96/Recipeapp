@@ -36,7 +36,7 @@ const links = [
     // icon: icon("purchase"),
   },
   {
-    title: "Recipe",
+    title: "Recipes",
     url: "/recipe",
     // icon: icon("sales"),
   },

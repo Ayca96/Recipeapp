@@ -21,7 +21,7 @@ export default function Register() {
     localStorage.setItem("email",email)
     localStorage.setItem("password",password)
 
-    navigate("/Recipe")
+    navigate("/recipe")
   }
   
   return (
@@ -47,7 +47,7 @@ export default function Register() {
       <Button 
       variant="contained" 
       endIcon={<SendIcon />}
-      onClick={()=>{navigate("/Recipe")}}
+      onClick={()=>{navigate("/recipe")}}
       >
        Register
       </Button>
