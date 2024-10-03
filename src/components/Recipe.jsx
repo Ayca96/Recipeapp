@@ -6,7 +6,7 @@ import { useContext } from 'react';
 
 
 
-function recipe() {
+function Recipe() {
   const {setQuery, setMealType, getData}=useContext(RecipeContext);
  
 
@@ -20,7 +20,7 @@ function recipe() {
     }
 
   return (
-    <div>
+    <div className='recipeContainer'>
       <p className='recipepar'>Recipes</p>
       <form onSubmit={handleSubmit} className='recipeFormContainer'>
         <input className='formInput' type="text" placeholder='search'
@@ -43,4 +43,4 @@ function recipe() {
   )
 }
 
-export default recipe
+export default Recipe

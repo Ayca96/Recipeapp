@@ -57,7 +57,7 @@ if(loading){
 
 
   return (
-    <RecipeContext.Provider value={{firstName, setfirstName, lastName,setLastName, email,setEmail,password,setPassword, getData,recipes}}>
+    <RecipeContext.Provider value={{firstName, setfirstName, lastName,setLastName, email,setEmail,password,setPassword, getData,recipes,setQuery,setMealType}}>
     
    {children}
     

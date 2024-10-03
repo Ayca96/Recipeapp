@@ -1,6 +1,7 @@
 
 import { useContext } from "react";
 import { RecipeContext } from "../context/AuthContext";
+import  "../css/RecipeCard.css"
 
 
 import { useNavigate } from "react-router-dom";
@@ -11,9 +12,9 @@ const RecipeCard = () => {
 const navigate=useNavigate()
   return (
 
-    <div>
+    <div className="recipeCardContainer">
       {recipes.map(({ recipe },index) => (
-        <div key={index}>
+        <div  className="cards" key={index}>
           <p>{recipe.label}</p>
           <img src={recipe.image} />
 
