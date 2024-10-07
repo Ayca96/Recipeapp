@@ -14,7 +14,7 @@ const Recipes = () => {
   // },[]) // burda neden sonsuz döngüye giriyorrr?
 
   return (
-    <div>
+    <div className='totalContainer'>
 
 
       <Recipe/>

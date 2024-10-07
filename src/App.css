@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: 0;
 }
+
+.totalContainer{
+  background: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+  url(./assets/brooke-lark-lcZ9NxhOSlo-unsplash.jpg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+
+}

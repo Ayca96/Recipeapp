@@ -34,10 +34,10 @@ export default function Register() {
       noValidate
       autoComplete="off"
     >
-      <TextField className='textField' id="outlined-basic" label="First Name" variant="outlined" onChange={(e)=>setfirstName(e.target.value)} />
-      <TextField className='textField' id="outlined-basic" label="Last Name" variant="standard"  onChange={(e)=>setLastName(e.target.value)}/>
-      <TextField className='textField' id="outlined-basic" label="E-Mail" variant="filled"  onChange={(e)=>setEmail(e.target.value)}/>
-      <TextField className='textField' id="outlined-basic" label="Password" variant="outlined"  onChange={(e)=>setPassword(e.target.value)}/>
+      <TextField className='textField' id="outlined-basic"label="First Name" variant="outlined"  color='secondary' onChange={(e)=>setfirstName(e.target.value)} />
+      <TextField className='textField' id="outlined-basic" label="Last Name" variant="outlined" color='secondary' onChange={(e)=>setLastName(e.target.value)}/>
+      <TextField className='textField' id="outlined-basic" label="E-Mail" variant="outlined"  color='secondary' onChange={(e)=>setEmail(e.target.value)}/>
+      <TextField className='textField' id="outlined-basic" label="Password" variant="outlined" color='secondary' onChange={(e)=>setPassword(e.target.value)}/>
 
       <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
       {/* <Button variant="contained" startIcon={<GoogleIcon />}>
