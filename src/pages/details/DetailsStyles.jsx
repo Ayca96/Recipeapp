@@ -8,7 +8,10 @@ export const DetailContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   background-image: url("../../assets/brooke-lark-GTMGG-xvxdU-unsplash.jpg");
+  background-size: cover; /* Resmin tüm alanı kaplaması için */
+  background-position: center;
   min-height: calc(100vh - 75px);
+
   /* height: fit-content; */
   padding: 5px;
 `;

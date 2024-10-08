@@ -27,5 +27,19 @@
     
    
   }
+
+  .cardButton{
+    background-color: #FBDF5C;
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+   
+  }
+
+  .cardButton:hover{
+    cursor: pointer;
+    background-color: #c0bd19;
+    box-shadow:  10px 5px 4px rgba(0, 0, 0, 0.5);
+  }
  
   /* css düzeltilecek */

@@ -18,7 +18,7 @@ const navigate=useNavigate()
           <p>{recipe.label}</p>
           <img className="cardImage" src={recipe.image} />
 
-          <button onClick={()=>navigate("/details", {state:{recipe}})}>Details</button>
+          <button className="cardButton" onClick={()=>navigate("/details", {state:{recipe}})}>Details</button>
         </div>
       ))}
     </div>
