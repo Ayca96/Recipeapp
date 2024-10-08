@@ -22,31 +22,41 @@ export const DetailPart = styled.div`
   align-items: center;
   margin: 1rem;
   border: 1px solid white;
-  border-radius: 5px;
-  background-color: pink;
+  border-radius: 50px;
+  /* background-color: pink; */
   /* background-color: #e1f1dd; */
   /* height: calc(100vh - 300px); */
   @media (max-width: 1250px) {
     justify-content: center;
 
-    border: 1px solid red;
+    border: 1px solid green;
   }
 `;
 
 export const ImgContainer = styled.div`
   /* resmin div i */
-  background-color: green;
+  background-color: #A2C15A;
 
-  border: 1px solid #00adb5;
+  
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 2rem;
+
+  &:hover {
+    background-color: darkgreen; /* Hover sırasında arka plan rengini değiştirme */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Gölgeleme efekti */
+    cursor: pointer;
+
+
+  }
   img {
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  
 `;
 
 export const HeaderContainer = styled.div`
@@ -68,18 +78,21 @@ export const HeaderContainer = styled.div`
 export const IngredContainer = styled.div`
   /* alttaki bilgiler, içindekiler */
   width: 400px;
+  padding: 1rem;
+  border-radius: 2rem;
   font-size: 1.4rem;
   margin: 2rem;
-  background-color: gray;
+  background-color:  #A2C15A;
 `;
 
 export const OtherPart = styled.div`
   /* üstteki bilgiler */
-  background-color: lightgray;
-
+  background-color: #A2C15A;
+  border-radius: 20px;
   width: 400px;
-  text-align: right;
-  font-size: 1.8rem;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.4rem;
   margin: 2rem;
   display: flex;
   flex-direction: column;

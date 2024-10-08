@@ -18,6 +18,10 @@ console.log(recipe);
       </HeaderContainer>
 
       <DetailPart>
+
+      <ImgContainer>
+          <img src={recipe.image} alt="" />
+        </ImgContainer>
         <OtherPart>
           <>NUTRIENTS</>
           <span>
@@ -55,9 +59,7 @@ console.log(recipe);
           </span>
         </OtherPart>
 
-        <ImgContainer>
-          <img src={recipe.image} alt="" />
-        </ImgContainer>
+       
 
         <IngredContainer>{recipe.ingredientLines.map((a,b)=>(
 <div key={b}>
