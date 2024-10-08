@@ -7,7 +7,7 @@ export const DetailContainer = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  background: #A2C15A;
+  background-image: url("../../assets/brooke-lark-GTMGG-xvxdU-unsplash.jpg");
   min-height: calc(100vh - 75px);
   /* height: fit-content; */
   padding: 5px;
@@ -51,7 +51,7 @@ export const ImgContainer = styled.div`
 
 export const HeaderContainer = styled.div`
   /* üstteki başlık ve kadın resmi */
-  background-color: darkgray;
+  /* background-color: darkgray; */
 
   display: flex;
   justify-content: space-evenly;

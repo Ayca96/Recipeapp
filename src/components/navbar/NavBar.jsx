@@ -11,7 +11,8 @@ import { useNavigate } from 'react-router-dom';
 // import Logo from "../../assets/Design ohne Titel.png"
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MenuIcon from '@mui/icons-material/Menu';
-import Date from '../Date';
+import Date from '../CurrentDate';
+import CurrentDate from '../CurrentDate';
 
 
 const links = [
@@ -107,6 +108,10 @@ export default function NavBar() {
           </Box>
           {<MenuBookIcon/>}
            <Button sx={{borderRadius:"50px","&:hover":{backgroundColor:"green"}}} onClick={toggleDrawer(anchor, true)}><MenuIcon sx={{color:"black", }} /></Button>
+
+           <div>
+          <CurrentDate/>
+          </div>
          </Box>
          
           <SwipeableDrawer
@@ -120,7 +125,7 @@ export default function NavBar() {
         </React.Fragment>
       ))}
 
-
+      
       
     </div>
   );

@@ -17,3 +17,11 @@
   min-height: 100vh;
 
 }
+
+
+.date{
+  background: linear-gradient(to bottom, rgba(150, 105, 105, 0.4), rgba(7, 15, 92, 0.5));
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}

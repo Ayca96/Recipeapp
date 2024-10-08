@@ -11,12 +11,15 @@ import PrivateRouter from "../router/PrivateRouter"
 import Details from "../pages/details/Details";
 import Recipes from "../pages/Recipes";
 
+import CurrentDate from "../components/CurrentDate";
+
 
 const AppRouter = () => {
   return (
     <>
       <BrowserRouter>  
       <NavBar/>
+     
         <Routes>
         <Route path="/home" element={<PrivateRouter/>}>
           <Route path="" element={<Recipes/>} />

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-const Date = () => {
+const CurrentDate = () => {
   const [dateTime, setDateTime] = useState(new Date());
 
   useEffect(() => {
@@ -13,8 +13,12 @@ const Date = () => {
   }, []);
 
   return (
-    <div>{dateTime.toLocaleDateString()} {dateTime.toLocaleTimeString()}</div>
+    <div className='date'>
+    
+    {dateTime.toLocaleDateString()} {dateTime.toLocaleTimeString()}
+
+    </div>
   );
 }
 
-export default Date;
+export default CurrentDate ;
