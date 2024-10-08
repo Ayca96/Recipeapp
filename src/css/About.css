@@ -20,3 +20,33 @@ font-size: 30px;
 /* margin-right: 40px; */
 
 }
+
+@media (max-width: 1024px) {
+  .aboutme {
+    left: 30rem; /* Daha küçük bir ekran için sola daha yakın */
+    font-size: 25px; /* Daha küçük font */
+  }
+}
+
+/* Ekran genişliği 768px'den küçük olduğunda */
+@media (max-width: 768px) {
+  .aboutme {
+    left: 15rem; /* Sol konum daha da daraltıldı */
+    font-size: 20px;
+  }
+}
+
+/* Ekran genişliği 480px'den küçük olduğunda (Mobil cihazlar) */
+@media (max-width: 480px) {
+  .aboutContainer {
+    height: auto; /* Mobil ekranlar için yüksekliği ayarladık */
+  }
+  
+  .aboutme {
+    position: static; /* Mobile daha iyi uyum için */
+    margin: 0 auto;
+    width: 90%;
+    font-size: 18px;
+    text-align: center; /* İçeriği ortalar */
+  }
+}
