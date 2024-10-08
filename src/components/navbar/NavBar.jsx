@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 // import Logo from "../../assets/Design ohne Titel.png"
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MenuIcon from '@mui/icons-material/Menu';
+import Date from '../Date';
 
 
 const links = [
@@ -118,6 +119,9 @@ export default function NavBar() {
           </SwipeableDrawer>
         </React.Fragment>
       ))}
+
+
+      
     </div>
   );
 }

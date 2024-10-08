@@ -7,11 +7,12 @@
 .totalContainer{
   background: 
   linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
-  url(./assets/brooke-lark-lcZ9NxhOSlo-unsplash.jpg);
+  url(./assets/mariana-medvedeva-usfIE5Yc7PY-unsplash.jpg);
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  /* background-color: #A2C15A; */
   width: 100%;
   min-height: 100vh;
 
