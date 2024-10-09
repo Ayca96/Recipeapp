@@ -13,6 +13,8 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import MenuIcon from '@mui/icons-material/Menu';
 import Date from '../CurrentDate';
 import CurrentDate from '../CurrentDate';
+import { useContext } from 'react';
+import{ RecipeContext } from '../../context/AuthContext';
 
 
 const links = [
@@ -22,11 +24,11 @@ const links = [
     // icon:"/assets/navbar/ic_analytics.svg",
     // icon: icon("ic_analytics"),
   },
-  {
-    title: "Register",
-    url: "/register",
-    // icon: icon("firms"),
-  },
+  // {
+  //   title: "Register",
+  //   url: "/register",
+  //   // icon: icon("firms"),
+  // },
   {
     title: "Login",
     url: "/login",
@@ -43,6 +45,7 @@ const links = [
     // icon: icon("sales"),
   },
 
+
 ];
 
 export default function NavBar() {
@@ -52,6 +55,8 @@ export default function NavBar() {
   });
 
  const Navigate=useNavigate()
+ const{logOut}=useContext(RecipeContext)
+
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -81,8 +86,11 @@ export default function NavBar() {
               </ListItemIcon> */}
               <ListItemText primary={text.title} />
             </ListItemButton>
+            
           </ListItem>
+          
         ))}
+        <button className='logOutButton' onClick={logOut}>Logout</button>
       </List>
    
     
@@ -111,6 +119,9 @@ export default function NavBar() {
 
            <div>
           <CurrentDate/>
+
+      
+
           </div>
          </Box>
          

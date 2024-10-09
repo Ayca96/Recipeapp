@@ -59,10 +59,13 @@ if(loading){
 }
 
 
-
+const logOut = ()=>{
+setEmail(""),
+setPassword("")
+}
 
   return (
-    <RecipeContext.Provider value={{firstName, setfirstName, lastName,setLastName, email,setEmail,password,setPassword, getData,recipes,setQuery,setMealType}}>
+    <RecipeContext.Provider value={{firstName, setfirstName, lastName,setLastName, email,setEmail,password,setPassword, getData,recipes,setQuery,setMealType, logOut}}>
     
    {children}
     

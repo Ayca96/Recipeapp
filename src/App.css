@@ -19,11 +19,26 @@
 }
 
 
+
 .date{
   background: linear-gradient(to bottom, rgba(150, 105, 105, 0.4), rgba(7, 15, 92, 0.5));
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 1.5rem;
+}
+
+.logOutButton{
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  margin-left: 1rem;
+  color: white;
+}
+
+.logOutButton:hover{
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 

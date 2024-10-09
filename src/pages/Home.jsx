@@ -28,10 +28,10 @@ function Home() {
 
 
     <div className="start">
-       <p>Please sign up to access our delicious recipes.</p>
+       <p>Please log in to access our delicious recipes.</p>
       <button 
       // onMouseOver={()=> setIsHovered(true)}
-      onClick={()=> navigate("/register")}
+      onClick={()=> navigate("/login")}
       className="homeButon">Get Started</button>
     </div>
      
