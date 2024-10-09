@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { createContext } from "react"
+import BounceLoader from "react-spinners/BounceLoader";
 
 
 
@@ -50,7 +51,11 @@ if(error){
 }
 
 if(loading){
-  return <p> LOADINGGGG.....</p>
+  return  (
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+        <BounceLoader color="#36d7b7" loading={loading} size={60} />
+      </div>
+  );
 }
 
 
