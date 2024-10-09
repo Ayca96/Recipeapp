@@ -1,7 +1,7 @@
-# Recipe App
+# Recipe App 🍕🍔🍟🥨
 Welcome to the Recipe App! This application allows users to explore a variety of recipes, search for specific meal types Built with modern web technologies, this app provides a seamless user experience and a visually appealing interface.
 
-## Features
+## Features ✏️🤓
 
 Recipe Search: Users can search for recipes based on ingredients and meal types (e.g., breakfast, lunch, dinner).
 
