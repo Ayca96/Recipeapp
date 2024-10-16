@@ -107,9 +107,9 @@ export default function NavBar() {
           justifyContent: 'center', 
           alignItems: 'center', 
           height: '100px',
-          margin: 0,
-          padding: 0,
-          
+          // margin: 0,
+          padding: '0 1.2rem',
+          width:'100%',
           }}>
           <Box sx={{marginRight:4, color:"white", fontSize:25}}> Aycas Recipe
           
