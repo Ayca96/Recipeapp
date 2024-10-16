@@ -1,53 +1,47 @@
-.aboutContainer{
+.aboutContainer {
   background-image: url(../assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; 
   padding: 0 1.2rem;
- 
   position: relative;
- 
 }
 
-
-.aboutme{
-position: absolute;
-top: 15rem;
-left: 55rem;
-width: 25rem;
-
-font-size: 30px;
-/* margin-right: 40px; */
-
+.aboutme {
+  position: absolute;
+  top: 15rem;
+  left: 55rem;
+  width: 25rem;
+  font-size: 30px;
 }
 
 @media (max-width: 1024px) {
   .aboutme {
-    left: 30rem; /* Daha küçük bir ekran için sola daha yakın */
-    font-size: 25px; /* Daha küçük font */
+    left: 30rem;
+    font-size: 25px;
   }
 }
 
-/* Ekran genişliği 768px'den küçük olduğunda */
 @media (max-width: 768px) {
   .aboutme {
-    left: 15rem; /* Sol konum daha da daraltıldı */
+    left: 15rem;
     font-size: 20px;
   }
 }
 
-/* Ekran genişliği 480px'den küçük olduğunda (Mobil cihazlar) */
 @media (max-width: 480px) {
   .aboutContainer {
-    height: auto; /* Mobil ekranlar için yüksekliği ayarladık */
+    height: auto; 
+    padding: 2rem 1.2rem; 
   }
-  
+
   .aboutme {
-    position: static; /* Mobile daha iyi uyum için */
+    position: static;
     margin: 0 auto;
-    width: 90%;
+    width: 100%; 
+    padding: 0 1rem; 
     font-size: 18px;
-    text-align: center; /* İçeriği ortalar */
+    text-align: center; 
   }
 }
