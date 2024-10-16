@@ -15,7 +15,7 @@ const navigate=useNavigate()
     <div className="recipeCardContainer">
       {recipes.map(({ recipe },index) => (
         <div  className="recipeCard" key={index}>
-          <p>{recipe.label}</p>
+          <p style={{color:'white', fontSize:'20px'}}>{recipe.label}</p>
           <img className="cardImage" src={recipe.image} />
 
           <button className="cardButton" onClick={()=>navigate("/details", {state:{recipe}})}>Details</button>
